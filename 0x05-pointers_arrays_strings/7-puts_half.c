@@ -1,20 +1,27 @@
 #include "main.h"
 
 /**
- *_strlen - returns the length of a string
- *@s: string
- *Return: length
+ * puts_half - a function that prints half of a string
+ * if odd len, n = (length_of_the_string -1) / 2
+ * @str: input
+ * Return: half of input
  */
 
-int _strlen(char *s)
+void puts_half(char *str)
 {
-	int longi = 0;
+	int a, n, i;
 
-	while (*s != '\0')
-	{
-		longi++;
-		s++;
-	}
-	
-	return (longi);
+	longi = 0;
+
+	for (a = 0; str[a] != '\0'; a++)
+		i++;
+
+	n = (i / 2);
+
+	if ((i % 2) == 1)
+		n = ((i + 1) / 2);
+
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
+	_putchar('\n');
 }
